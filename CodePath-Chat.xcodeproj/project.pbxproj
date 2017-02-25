@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		663D75771E61FA4A002D186B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663D75761E61FA4A002D186B /* AppDelegate.swift */; };
-		663D75791E61FA4A002D186B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663D75781E61FA4A002D186B /* ViewController.swift */; };
 		663D757C1E61FA4A002D186B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663D757A1E61FA4A002D186B /* Main.storyboard */; };
 		663D757E1E61FA4A002D186B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663D757D1E61FA4A002D186B /* Assets.xcassets */; };
 		663D75811E61FA4A002D186B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663D757F1E61FA4A002D186B /* LaunchScreen.storyboard */; };
+		663D758A1E6202DD002D186B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663D75891E6202DD002D186B /* LoginViewController.swift */; };
 		72C2E10F35724CB8BB1024CA /* Pods_CodePath_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F481B851564207EE0C32C80A /* Pods_CodePath_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +20,11 @@
 		1E628EACE19FC2B0E594777B /* Pods-CodePath-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodePath-Chat/Pods-CodePath-Chat.release.xcconfig"; sourceTree = "<group>"; };
 		663D75731E61FA4A002D186B /* CodePath-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodePath-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		663D75761E61FA4A002D186B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		663D75781E61FA4A002D186B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		663D757B1E61FA4A002D186B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		663D757D1E61FA4A002D186B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		663D75801E61FA4A002D186B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		663D75821E61FA4A002D186B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663D75891E6202DD002D186B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F481B851564207EE0C32C80A /* Pods_CodePath_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePath_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,14 +69,22 @@
 		663D75751E61FA4A002D186B /* CodePath-Chat */ = {
 			isa = PBXGroup;
 			children = (
+				663D75881E6202C9002D186B /* View Controller */,
 				663D75761E61FA4A002D186B /* AppDelegate.swift */,
-				663D75781E61FA4A002D186B /* ViewController.swift */,
 				663D757A1E61FA4A002D186B /* Main.storyboard */,
 				663D757D1E61FA4A002D186B /* Assets.xcassets */,
 				663D757F1E61FA4A002D186B /* LaunchScreen.storyboard */,
 				663D75821E61FA4A002D186B /* Info.plist */,
 			);
 			path = "CodePath-Chat";
+			sourceTree = "<group>";
+		};
+		663D75881E6202C9002D186B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				663D75891E6202DD002D186B /* LoginViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 		C7410AAB03282D438FE13AA2 /* Pods */ = {
@@ -211,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663D75791E61FA4A002D186B /* ViewController.swift in Sources */,
+				663D758A1E6202DD002D186B /* LoginViewController.swift in Sources */,
 				663D75771E61FA4A002D186B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +382,7 @@
 				663D75871E61FA4A002D186B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
