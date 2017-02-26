@@ -29,16 +29,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func signUp(_ sender: UIButton) {
         let user = PFUser()
-        user.email = emailTextField.text
+        user.username = emailTextField.text
         user.password = passwordTextField.text
         
-        user.signUpInBackgroundWithBlock {
-            (succeeded: Bool, error: NSError?) -> Void in
+        user.signUpInBackground { (success: Bool, error: Error?) in
             if let error = error {
-                let errorString = error.userInfo["error"] as? NSString
-                // Show the errorString somewhere and let the user try again.
+                print(error.localizedDescription)
             } else {
-                // Hooray! Let them use the app now.
+                print("Yay! We are signed up, let's use the app 👍")
             }
         }
         
